@@ -8,6 +8,7 @@
 # Install native apps
 
 brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
 
 # daily
 brew cask install anki
