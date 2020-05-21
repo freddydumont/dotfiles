@@ -39,6 +39,10 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
+# Install database binaries
+brew install mysql
+brew install postgresql
+
 # z hopping around folders
 brew install z
 
@@ -48,6 +52,10 @@ brew install entr
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
 
+# Install network tools
+brew install httpie # nice curl alternative
+brew install nmap
+brew install wifi-password
 
 # mtr - ping & traceroute. best.
 brew install mtr
@@ -59,12 +67,13 @@ brew install mtr
 
 
 # Install other useful binaries
-brew install the_silver_searcher
+# brew install the_silver_searcher
 brew install fzf
 
 brew install git
 brew install imagemagick --with-webp
-brew install node # This installs `npm` too using the recommended installation method
+# don't install node, install with nvm
+# brew install node # This installs `npm` too using the recommended installation method
 brew install pv
 brew install rename
 brew install tree
@@ -73,12 +82,17 @@ brew install ffmpeg --with-libvpx
 
 brew install terminal-notifier
 
-brew install android-platform-tools
+brew install bat # better cat
 brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went
 
+brew install neofetch # nice cli system info
+
 brew install zsh
+
+# starship prompt
+brew install starship
 
 # Remove outdated versions from the cellar
 brew cleanup
