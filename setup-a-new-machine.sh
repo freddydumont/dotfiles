@@ -224,7 +224,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 # set up osx defaults
 #   maybe something else in here https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
-sh .osx
+sh .macos
 
 # setup and run Rescuetime!
 
