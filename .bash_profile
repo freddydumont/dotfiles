@@ -8,9 +8,9 @@ done
 unset file
 
 # to help sublimelinter etc with finding my PATHS
-case $- in
-   *i*) source ~/.extra
-esac
+# case $- in
+#    *i*) source ~/.extra
+# esac
 
 # generic colouriser
 GRC=`which grc`
@@ -36,10 +36,6 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 ## gotta tune that bash_history…
 ##
 
-# Enable history expansion with space
-# E.g. typing !!<space> will replace the !! with your last command
-bind Space:magic-space
-
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
 # %T equivalent to %H:%M:%S (24-hours format)
@@ -54,9 +50,6 @@ type shopt &> /dev/null && shopt -s histappend  # append to history, don't overw
 
 # Don't record some commands
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
-
-# Save multi-line commands as one command
-shopt -s cmdhist
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
@@ -90,6 +83,13 @@ fi;
 if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
     return 1 2> /dev/null || exit 1;
 fi;
+
+# Enable history expansion with space
+# E.g. typing !!<space> will replace the !! with your last command
+bind Space:magic-space
+
+# Save multi-line commands as one command
+shopt -s cmdhist
 
 # Sorry, very MacOS centric here. :/
 if  which brew > /dev/null; then
@@ -141,3 +141,6 @@ shopt -s dirspell 2> /dev/null
 
 # Turn on recursive globbing (enables ** to recurse all directories)
 shopt -s globstar 2> /dev/null
+
+# init starship prompt
+eval "$(starship init bash)"

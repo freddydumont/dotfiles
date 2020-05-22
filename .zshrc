@@ -18,42 +18,39 @@ source ~/dev/antigen/antigen.zsh
 ######################################################################
 ### install some antigen bundles
 
-local b="antigen bundle"
-
-
 # Don't load the oh-my-zsh's library. Takes too long. No need.
-	# antigen use oh-my-zsh
+# antigen use oh-my-zsh
 
 # Guess what to install when running an unknown command.
-$b command-not-found
+antigen bundle command-not-found
 
 # Helper for extracting different types of archives.
-$b extract
+antigen bundle extract
 
 # homebrew  - autocomplete on `brew install`
-$b brew
-$b brew-cask
+antigen bundle brew
+antigen bundle brew-cask
 
 # nicoulaj's moar completion files for zsh -- not sure why disabled.
-# $b zsh-users/zsh-completions src
+antigen bundle zsh-users/zsh-completions
 
 # Syntax highlighting on the readline
-$b zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # history search
-$b zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
+antigen bundle zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
 
 # suggestions
-$b tarruda/zsh-autosuggestions
+antigen bundle zsh-users/zsh-autosuggestions
 
 # colors for all files!
-$b trapd00r/zsh-syntax-highlighting-filetypes
+antigen bundle trapd00r/zsh-syntax-highlighting-filetypes
 
-$b mafredri/zsh-async
+antigen bundle mafredri/zsh-async
 
-$b git
-$b osx
-$b npm
+antigen bundle git
+antigen bundle osx
+antigen bundle npm
 
 # Tell antigen that you're done.
 antigen apply
@@ -69,14 +66,6 @@ auto-ls () {
 	hash gls >/dev/null 2>&1 && CLICOLOR_FORCE=1 gls -aFh --color --group-directories-first || ls
 }
 chpwd_functions=( auto-ls $chpwd_functions )
-
-
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-
-zle -N zle-line-init
 
 
 # history mgmt

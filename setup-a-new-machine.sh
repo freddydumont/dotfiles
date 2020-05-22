@@ -166,17 +166,9 @@ npm install -g diff-so-fancy
 # trash as the safe `rm` alternative
 npm install --global trash-cli
 
-# more readable git diffs
-npm install --global diff-so-fancy
-
 # install better nanorc config
 # https://github.com/scopatz/nanorc
 curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
-
-# github.com/rupa/z   - oh how i love you
-git clone https://github.com/rupa/z.git ~/code/z
-# consider reusing your current .z file if possible. it's painful to rebuild :)
-# z is hooked up in .bash_profile
 
 
 # github.com/thebitguru/play-button-itunes-patch
