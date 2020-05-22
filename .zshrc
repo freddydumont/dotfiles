@@ -12,13 +12,13 @@ fpath=( "$HOME/.zfunctions" $fpath )
 
 
 # antigen time!
-source ~/code/antigen/antigen.zsh
+source ~/dev/antigen/antigen.zsh
 
 
 ######################################################################
 ### install some antigen bundles
 
-local b="antigen-bundle"
+local b="antigen bundle"
 
 
 # Don't load the oh-my-zsh's library. Takes too long. No need.
@@ -30,15 +30,9 @@ $b command-not-found
 # Helper for extracting different types of archives.
 $b extract
 
-# atom editor
-$b atom
-
 # homebrew  - autocomplete on `brew install`
 $b brew
 $b brew-cask
-
-# Tracks your most used directories, based on 'frecency'.
-$b robbyrussell/oh-my-zsh plugins/z
 
 # nicoulaj's moar completion files for zsh -- not sure why disabled.
 # $b zsh-users/zsh-completions src
@@ -55,24 +49,18 @@ $b tarruda/zsh-autosuggestions
 # colors for all files!
 $b trapd00r/zsh-syntax-highlighting-filetypes
 
-# dont set a theme, because pure does it all
 $b mafredri/zsh-async
-$b sindresorhus/pure
+
+$b git
+$b osx
+$b npm
 
 # Tell antigen that you're done.
-#antigen apply
+antigen apply
 
 ###
 #################################################################################################
 
-
-
-# bind UP and DOWN arrow keys for history search
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-
-export PURE_GIT_UNTRACKED_DIRTY=0
 
 # Automatically list directory contents on `cd`.
 auto-ls () {
@@ -112,3 +100,6 @@ source ~/.bash_profile
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# init starship prompt
+eval "$(starship init zsh)"

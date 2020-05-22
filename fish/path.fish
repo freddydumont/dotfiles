@@ -17,11 +17,6 @@ for entry in (string split \n $PATH_DIRS)
     end
 end
 
-# # rvm
-# if which -s rvm;
-# 	set PA $PA /Users/paulirish/.rvm/gems/ruby-2.2.1/bin
-# end
-
 
 set -l paths "
 # yarn binary
@@ -40,16 +35,8 @@ for entry in (string split \n $paths)
     end
 end
 
-# GO
-set PA $PA "/Users/paulirish/.go/bin"
+# `code` binary from VS Code
+set PA $PA "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# `code` binary from VS Code insiders
-set PA $PA "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin"
-
-
-# Google Cloud SDK.
-if test -f "$HOME/google-cloud-sdk/path.fish.inc"
-    source "$HOME/google-cloud-sdk/path.fish.inc"
-end
 
 set --export PATH $PA

@@ -90,6 +90,7 @@ brew install ncdu # find where your diskspace went
 brew install neofetch # nice cli system info
 
 brew install zsh
+brew install fish
 
 # starship prompt
 brew install starship
