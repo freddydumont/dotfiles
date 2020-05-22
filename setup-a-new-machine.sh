@@ -146,25 +146,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 # install antigen by running this in /dev/antigen
 curl -L git.io/antigen > antigen.zsh
 
-# github.com/jamiew/git-friendly
-# the `push` command which copies the github compare URL to my clipboard is heaven
-bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
-
 # autocompletion for git branch names https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 
-# Type `git open` to open the GitHub page or website for a repository.
-npm install -g git-open
-
-# fancy listing of recent branches
-npm install -g git-recent
-
-# sexy git diffs
-npm install -g diff-so-fancy
-
-# trash as the safe `rm` alternative
-npm install --global trash-cli
+# - Type `git open` to open the GitHub page or website for a repository.
+# - fancy listing of recent branches
+# - sexy git diffs
+# - trash as the safe `rm` alternative
+npm install -g git-open git-recent diff-so-fancy trash-cli
 
 # install better nanorc config
 # https://github.com/scopatz/nanorc
@@ -173,7 +163,7 @@ curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 # github.com/thebitguru/play-button-itunes-patch
 # disable itunes opening on media keys
-git clone https://github.com/thebitguru/play-button-itunes-patch ~/code/play-button-itunes-patch
+# git clone https://github.com/thebitguru/play-button-itunes-patch ~/code/play-button-itunes-patch
 
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments

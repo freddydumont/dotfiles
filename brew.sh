@@ -29,11 +29,11 @@ brew install bash-completion
 
 brew install homebrew/completions/brew-cask-completion
 
-# Install wget with IRI support
-brew install wget --with-iri
+# Install wget
+brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim --with-override-system-vi
+brew install vim
 brew install homebrew/dupes/nano
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
@@ -51,6 +51,8 @@ brew install entr
 
 # github util. gotta love `hub fork`, `hub create`, `hub checkout <PRurl>`
 brew install hub
+
+brew install git-friendly/git-friendly/git-friendly
 
 # Install network tools
 brew install httpie # nice curl alternative

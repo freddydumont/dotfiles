@@ -7,7 +7,6 @@ SAVEHIST=100000
 # vim bindings
 bindkey -v
 
-
 fpath=( "$HOME/.zfunctions" $fpath )
 
 
@@ -58,6 +57,10 @@ antigen apply
 ###
 #################################################################################################
 
+# fix substring search
+# https://github.com/zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Automatically list directory contents on `cd`.
 auto-ls () {

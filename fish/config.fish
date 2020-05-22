@@ -2,11 +2,10 @@ set default_user "frederick"
 set default_machine "frederick-macbookpro"
 
 
-source ~/.config/fish/path.fish
+# source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
-source ~/.config/fish/conf.d/scmpuff.fish
 
 # for things not checked into git..
 if test -e "$HOME/.extra.fish";
@@ -52,23 +51,23 @@ set -g fish_color_valid_path --underline
 set -g fish_color_dimmed 555
 set -g fish_color_separator 999
 
-# Git prompt status
-set -g __fish_git_prompt_showdirtystate 'yes'
-set -g __fish_git_prompt_showupstream auto
+# # Git prompt status
+# set -g __fish_git_prompt_showdirtystate 'yes'
+# set -g __fish_git_prompt_showupstream auto
 
-# Status Chars
-#set __fish_git_prompt_char_dirtystate '*'
-set __fish_git_prompt_char_upstream_equal ''
-set __fish_git_prompt_char_upstream_ahead '↑'
-set __fish_git_prompt_char_upstream_behind '↓'
-set __fish_git_prompt_color_branch yellow
-set __fish_git_prompt_color_dirtystate 'red'
+# # Status Chars
+# #set __fish_git_prompt_char_dirtystate '*'
+# set __fish_git_prompt_char_upstream_equal ''
+# set __fish_git_prompt_char_upstream_ahead '↑'
+# set __fish_git_prompt_char_upstream_behind '↓'
+# set __fish_git_prompt_color_branch yellow
+# set __fish_git_prompt_color_dirtystate 'red'
 
-set __fish_git_prompt_color_upstream_ahead ffb90f
-set __fish_git_prompt_color_upstream_behind blue
+# set __fish_git_prompt_color_upstream_ahead ffb90f
+# set __fish_git_prompt_color_upstream_behind blue
 
-# Local prompt customization
-set -e fish_greeting
+# # Local prompt customization
+# set -e fish_greeting
 
 
 set -g fish_pager_color_completion normal
