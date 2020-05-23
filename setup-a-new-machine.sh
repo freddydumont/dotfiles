@@ -145,7 +145,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 # - fancy listing of recent branches
 # - sexy git diffs
 # - trash as the safe `rm` alternative
-npm install -g git-open git-recent diff-so-fancy trash-cli
+npm install -g git-open git-recent diff-so-fancy trash-cli yarn
 
 # install better nanorc config
 # https://github.com/scopatz/nanorc
