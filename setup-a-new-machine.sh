@@ -37,9 +37,6 @@ cp -Rp \
     ~/.z   \
         ~/migration/home
 
-# Documents are saved into iCloud
-# cp -Rp ~/Documents ~/migration
-
 cp -Rp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/migration/rootLibrary/Preferences/SystemConfiguration/ # wifi
 
 cp -Rp ~/Library/Preferences/com.tinyspeck.slackmacgap.plist ~/migration/Library/Preferences/
@@ -49,13 +46,13 @@ cp -Rp ~/Library/Fonts ~/migration/Library/ # all those fonts you've installed
 
 # Setapp
 cp -Rp ~/Library/Application\ Support/Setapp ~/migration/Library/"Application Support"
+# Shimo VPN client config
+cp -Rp ~/Library/Application\ Support/Shimo ~/migration/Library/"Application Support"
 
 # also consider...
 # random git branches you never pushed anywhere?
 # git untracked files (or local gitignored stuff). stuff you never added, but probably want..
 
-
-# OneTab history pages, because chrome tabs are valuable.
 
 # usage logs you've been keeping.
 
@@ -64,12 +61,6 @@ cp -Rp ~/Library/Application\ Support/Setapp ~/migration/Library/"Application Su
 
 # Finder settings and TotalFinder settings
 #   Not sure how to do this yet. Really want to.
-
-# Timestats chrome extension stats
-#   chrome-extension://ejifodhjoeeenihgfpjijjmpomaphmah/options.html#_options
-# 	gotta export into JSON through devtools:
-#     copy(JSON.stringify(localStorage))
-#     pbpaste > timestats-canary.json.txt
 
 # software licenses.
 #   sublimetext's is in its Application Support folder
