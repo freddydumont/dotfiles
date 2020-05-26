@@ -48,6 +48,9 @@ cp -Rp ~/Library/Fonts ~/migration/Library/ # all those fonts you've installed
 cp -Rp ~/Library/Application\ Support/Setapp ~/migration/Library/"Application Support"
 # Shimo VPN client config
 cp -Rp ~/Library/Application\ Support/Shimo ~/migration/Library/"Application Support"
+# Anki
+cp -Rp ~/Library/Application\ Support/Anki2 ~/migration/Library/"Application Support"
+
 
 # also consider...
 # random git branches you never pushed anywhere?
