@@ -46,8 +46,8 @@ cp -Rp ~/Library/Fonts ~/migration/Library/ # all those fonts you've installed
 
 # Setapp
 cp -Rp ~/Library/Application\ Support/Setapp ~/migration/Library/"Application Support"
-# Shimo VPN client config
-cp -Rp ~/Library/Application\ Support/Shimo ~/migration/Library/"Application Support"
+# Viscosity VPN client config
+cp -Rp ~/Library/Application\ Support/Viscosity ~/migration/Library/"Application Support"
 # Anki
 cp -Rp ~/Library/Application\ Support/Anki2 ~/migration/Library/"Application Support"
 
