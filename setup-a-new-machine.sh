@@ -48,6 +48,8 @@ cp -Rp ~/Library/Fonts ~/migration/Library/ # all those fonts you've installed
 cp -Rp ~/Library/Application\ Support/Setapp ~/migration/Library/"Application Support"
 # Viscosity VPN client config
 cp -Rp ~/Library/Application\ Support/Viscosity ~/migration/Library/"Application Support"
+# One Switch
+cp -Rp ~/Library/Application\ Support/One\ Switch ~/migration/Library/"Application Support"
 # Anki
 cp -Rp ~/Library/Application\ Support/Anki2 ~/migration/Library/"Application Support"
 
