@@ -45,6 +45,7 @@ brew cask install firefox-developer-edition
 # less often
 brew cask install transmission
 brew cask install wireshark
+brew cask install balenaetcher
 
 # fonts
 brew tap homebrew/cask-fonts 
