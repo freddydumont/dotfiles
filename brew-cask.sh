@@ -35,6 +35,7 @@ brew cask install qmk-toolbox
 # fun
 brew cask install discord
 brew cask install steam
+brew cask install itch
 brew cask install telegram
 
 # browsers
