@@ -42,6 +42,7 @@ brew cask install telegram
 brew cask install brave-browser
 brew cask install firefox
 brew cask install firefox-developer-edition
+brew cask install google-chrome
 
 # less often
 brew cask install transmission
