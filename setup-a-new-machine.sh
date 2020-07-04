@@ -52,6 +52,10 @@ cp -Rp ~/Library/Application\ Support/Viscosity ~/migration/Library/"Application
 cp -Rp ~/Library/Application\ Support/One\ Switch ~/migration/Library/"Application Support"
 # Anki
 cp -Rp ~/Library/Application\ Support/Anki2 ~/migration/Library/"Application Support"
+# IconJar
+cp -Rp ~/Library/Application\ Support/IconJar ~/migration/Library/"Application Support"
+# Calibre Library
+cp -Rp ~/Calibre ~/migration/Calibre
 
 
 # also consider...
